@@ -30,6 +30,10 @@ body {
     // .page__main
 
     &__main {}
+
+    // .page__clients
+
+    &__clients {}
 }
 
 .button {
@@ -473,6 +477,68 @@ body {
 
         & img {
             max-width: 100%;
+        }
+    }
+}
+
+// Clients ================================================
+
+.clients {
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    @media @tablet {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @media @mobile {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    // .clients__container
+
+    &__container {}
+
+    // .clients__title
+
+    &__title {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 14px;
+        line-height: 1.57;
+        /* 22/14 */
+        margin-bottom: 44px;
+
+        @media @tablet {
+            margin-bottom: 30px;
+        }
+
+        @media @mobile {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .clients__items
+
+    &__items {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    // .clients__item
+
+    &__item {
+
+        // .clients__item img
+
+        & img {
+            min-width: 100%;
         }
     }
 }
